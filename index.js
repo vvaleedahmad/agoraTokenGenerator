@@ -31,7 +31,6 @@ app.post('/generate-token', (req, res) => {
       channelName,
       uid,
       mappedRole,
-      tokenExpirationInSeconds,
       privilegeExpirationInSeconds
     );
 
