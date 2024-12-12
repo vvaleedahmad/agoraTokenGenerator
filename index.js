@@ -21,7 +21,6 @@ app.post('/generate-token', (req, res) => {
     return res.status(400).json({ error: "channelName, uid, and role are required" });
   }
   const mappedRole = role.toLowerCase() === "publisher" ? RtcRole.PUBLISHER : RtcRole.SUBSCRIBER;
-  const tokenExpirationInSeconds = 3600;
   const privilegeExpirationInSeconds = 3600;
 
   try {
