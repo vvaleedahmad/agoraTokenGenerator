@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const { RtcTokenBuilder, RtcRole } = require('agora-access-token');
+const RtcTokenBuilder = require("./src/RtcTokenBuilder2").RtcTokenBuilder;
+const RtcRole = require("./src/RtcTokenBuilder2").Role;
 require('dotenv').config();
 
 const app = express();
